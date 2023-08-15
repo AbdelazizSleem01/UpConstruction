@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    --line-offset: calc((10vh + 8px) / 2);
+}
+:root{
+    --color-yell:#ffb300;
+    --color-dark:#000000;
+    --color-white:#fff;
+
+}
+.Projects{
+    margin-top: 150px;
+}
+.Projects h1{
+    width: 37%; 
+    border-bottom: 2px solid var(--color-yell); 
+    line-height: 0.1em;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.Projects h1 span{
+    background:#ffffff; 
+    padding:0 10px; 
+}
+
+.Projects p{
+    margin-bottom: 70px;
+    font-family: none;
+    font-weight: 800;
+}
+
+
+.Projects {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background: #ffffff;
+    margin-bottom: 400px;
+}
+
+.Projects ul {
+    list-style: none;
+    margin-top: 700px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.tab {
+    width: calc(10vh + 8px);
+    height: calc(10vh + 8px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    z-index: 0;
+    transition: width 0.5s;
+    
+}
+
+.tab img {
+    width: 10vh;
+    height: 10vh;
+    z-index: 10;
+    cursor: pointer;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    transition: width 0.5s;
+}
+
+[type=radio] {
+    display: none;   
+}
+
+.preview-list {
+    background: linear-gradient(
+        #ffde06,
+        #ffa200 var(--line-offset),
+        #efefef var(--line-offset)
+    );
+}
+
+.tab {
+    
+    background: linear-gradient(
+        #000000,
+        #000000 var(--line-offset),
+        #000000 var(--line-offset)
+    );
+}
+
+[type=radio]:checked ~ label ~ .content{
+    text-align: center;
+    z-index: 8;
+}
+
+
+[type=radio]:checked ~ label .tab{
+    width: 0;
+}
+
+.content {
+    position: absolute;
+    background: #ffffff;
+    top: 572vh;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%) scaleX(.6);
+    width:50vw;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+@media (max-width:1090px) {
+    .content {
+        position: absolute;
+        background: #000000;
+        top: 281pc;
+        left: 50%;
+        transform: translate(-50%) scaleX(.6);
+        width:70vw;
+        height: 70vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width:992px) {
+    .content {
+        position: absolute;
+        background: #000000;
+        top: 325pc;
+        left: 50%;
+        transform: translate(-50%) scaleX(.6);
+        width:100vw;
+        height: 70vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width:768px) {
+    .content {
+        position: absolute;
+        background: #000000;
+        top: 501pc;
+        left: 50%;
+        transform: translate(-50%) scaleX(.6);
+        width:120vw;
+        height: 60vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width:576px) {
+    .content {
+        position: absolute;
+        background: #000000;
+        top:507pc;
+        left: 50%;
+        transform: translate(-50%) scaleX(.6);
+        width:120vw;
+        height: 40vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .tab{
+        overflow: hidden;
+        width: 40px;        
+    }
+
+    .title{
+        margin-top: 200px;
+    }
+    .Constructions h1{
+        width: 60%; 
+        border-bottom: 2px solid var(--color-yell); 
+        line-height: 0.1em;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:768) {
+    .content {
+        position: absolute;
+        background: #000000;
+        top: 501pc;
+        left: 50%;
+        transform: translate(-50%) scaleX(.6);
+        width:120vw;
+        height: 60vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.content img {
+    height: 100%;
+    width: 100%;  
+}

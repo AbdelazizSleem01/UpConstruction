@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: -8px;
+    font-family: 'Caprasimo', cursive;
+}
+
+:root{
+    --color-yell:#ffb300;
+    --color-dark:#000000;
+    --color-white:#fff;
+
+}
+.bg-image{
+    background-image: url(../../img/hero-carousel-1.jpg);
+    width: auto;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.667);
+}
+.Hero-title{
+    font-size: 3.5em;
+    width: 500px;
+    position: relative;
+    top: -5pc;
+}
+.border-b {
+    border-bottom: 5px solid var(--color-yell);
+    border-radius:50px ;
+    width: 100px;
+    position: relative;
+    top:-90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sup-title{
+    width: 500px;
+    color: rgba(255, 255, 255, 0.696);
+    line-height: 23px;
+    position: relative;
+    top: -2pc;
+}
+.btn{
+    margin-top: 40px;
+    border: 3px solid var(--color-yell);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 900;
+    width: 200px;
+}
+.btn:hover{
+    margin-top: 40px;
+    background-color: var(--color-yell);
+    font-weight: 900;
+}
+@media (max-width:576px) {
+    .Hero-title{
+        font-size: 2.5em;
+        width: 500px;
+        position: relative;
+        top: -5pc;
+    }
+    .sup-title{
+        width: 80vw;
+        color: rgba(255, 255, 255, 0.696);
+        line-height: 23px;
+        margin: auto;
+    }
+}
+@media (max-width:360px) {
+    .Hero-title{
+        font-size: 1.7em;
+        width: 300px;
+        position: relative;
+        top: -5pc;
+    }
+    .sup-title{
+        width: 80vw;
+        color: rgba(255, 255, 255, 0.696);
+        line-height: 23px;
+        margin: auto;
+    }
+}
+.qoute{
+    background-color: rgba(0, 0, 0, 0.063);
+}
+.card-qoute {
+    margin-top: 100px;
+    width: 27em;
+    margin-bottom: 100px;
+
+
+}
+.qoute-title{
+    margin-top: 200px;
+    width: 700px;
+    margin-bottom: 100px;
+    
+}
+.qoute-title h1{
+    font-size: 2em;
+    margin-left: 50px;
+}
+.border-b1{
+    border-bottom:  3px solid #ffc400;
+    line-height: 10px;
+    border-radius: 15px;
+    width: 100px;
+    position: relative;
+    left: 50px;
+    margin-bottom: 50px;
+}
+.qoute-title p{
+    margin-left: 50px;
+    font-size: .9em;
+}
+form .btn{
+    color:var(--color-yell);
+}
+form .btn:hover{
+    color:var(--color-white);
+    background-color: var(--color-yell);
+}
+.Constructions{
+    margin:200px 50px 100px 0px ;
+}
+.Constructions .card{
+    width: 550px;
+    border: var(--color-yell) 2px solid;
+    box-shadow: #000000 1px 2px 10px ;
+}
+@media (max-width:1100px) {
+    .Constructions .card{
+        width:auto;
+    }
+}
+@media (max-width:767px) {
+    .Constructions .card{
+        width:auto;
+        height: auto;
+    }
+    .Constructions .card img{ 
+        width: 100%;
+    }
+    .Constructions .card-title{ 
+        margin-top: 10px;
+    }
+}
+.Constructions .card img{ 
+    height: 225px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.Constructions .card-title{ 
+    font-size: 1.8em;
+    font-family: none;
+    font-weight: 900;
+}
+.Constructions .card-text{ 
+    font-size: .8em;
+    font-family: none;
+    font-weight: 800;
+}
+.Constructions h1{
+    width: 37%; 
+    border-bottom: 2px solid var(--color-yell); 
+    line-height: 0.1em;
+    margin-bottom: 60px;
+}
+.Constructions h1 span{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.Constructions p{
+    margin-bottom: 70px;
+    font-family: none;
+    font-weight: 800;
+}
